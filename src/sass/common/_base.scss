@@ -1,0 +1,9 @@
+body {
+  background-color: getColor('bg-primary');
+  font-family: 'Roboto', sans-serif;
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+}

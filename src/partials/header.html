@@ -1,0 +1,76 @@
+<header class="header__background-home" id="header">
+  <div class="theme-switch">
+    <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+      <use href="./images/sprite.svg#sun"></use>
+    </svg>
+
+    <div class="theme-switch__control">
+      <input
+        class="theme-switch__toggle"
+        type="checkbox"
+        name="theme"
+        id="theme-switch-toggle"
+        aria-label="Переключить между тёмной и светлой темой"
+      />
+      <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+      <div aria-hidden="true" class="theme-switch__marker"></div>
+    </div>
+
+    <svg class="theme-switch__icon" aria-label="Иконка луны">
+      <use href="./images/sprite.svg#moon"></use>
+    </svg>
+  </div>
+
+  <div class="language-switch">
+    <svg class="language-switch__icon" role="img" aria-label="Английский язык">
+      <use href="./images/sprite.svg#icon-flag-us"></use>
+    </svg>
+
+    <div class="language__control">
+      <input
+        class="language__toggle"
+        type="checkbox"
+        name="language"
+        id="language-switch-toggle"
+        aria-label="Переключить между английским и русским языком"
+      />
+      <label aria-hidden="true" class="language-switch__track" for="language-switch-toggle">
+      </label>
+      <div aria-hidden="true" class="language-switch__marker"></div>
+    </div>
+    <svg class="language-switch__icon" aria-label="Русский язык">
+      <use href="./images/sprite.svg#icon-flag-ru"></use>
+    </svg>
+  </div>
+  <div class="container header__container">
+    <nav class="header__nav">
+      <a href="./index.html" class="header__logo">
+        <svg width="24" height="24">
+          <use href="images/icons.svg#film"></use>
+        </svg>
+        <span class="header__logo-span"> Filmoteka</span>
+      </a>
+      <ul class="header__nav-list">
+        <li>
+          <a href="./index.html" class="header__nav-home-link home header__link_active" id="home-link">Home</a>
+        </li>
+        <li>
+          <a href="#" class="header__nav-library-link library" id="library-link">my library</a>
+        </li>
+      </ul>
+    </nav>
+      <form class="header__search-form js-search-form" id="search-form">
+        <input type="text" name="query" autocomplete="off" placeholder="Поиск фильмов" class="header__search-form-input"
+          id="search-form-input"/>
+        <button type="submit" class="header__form-btn" aria-label="Search"></button>
+      </form>
+      <div class="header__search-error is-hidden">
+        <p class="header__search-error-text">
+          Search result not successful. Enter the correct movie name and try again.
+        </p>
+      </div>
+    <div class="header__buttons hidden">
+      <button type="submit" class="header__btn" id="btn-watched" aria-label="Watched">Watched</button>
+      <button type="submit" class="header__btn" id="btn-queue" aria-label="Queue">Queue</button>
+    </div>
+</header>
